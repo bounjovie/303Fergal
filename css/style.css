@@ -24,7 +24,7 @@ html{
         ),
         url("../assets/backgrounds/liquid.jpg");
     background-size:cover;
-    background-position:center
+    background-position:center;
     background-repeat:no-repeat;
     animation:
         heroZoom 30s ease-in-out infinite alternate;
