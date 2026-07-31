@@ -186,6 +186,7 @@ nav a.active{
         ),
         url("../assets/backgrounds/hero.jpg")
         center/cover no-repeat;
+   filter:contrast(1.1) brightness(.85);
 }
 .hero-overlay{
     position:absolute;
@@ -659,8 +660,17 @@ button:focus-visible{
 #particles{
     position:fixed;
     inset:0;
-    width:100%;
-    height:100%;
-    z-index:-1;
+    z-index:1;
     pointer-events:none;
+    opacity:.55;
+}
+@keyframes heroZoom{
+    from{
+        background-size:100%;
+        background-position:center;
+    }
+    to{
+        background-size:112%;
+        background-position:center;
+    }
 }
