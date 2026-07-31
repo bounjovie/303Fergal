@@ -14,6 +14,13 @@
 html{
     scroll-behavior:smooth;
 }
+body{
+    background:#050505;
+    color:#ffffff;
+    font-family:"Inter",sans-serif;
+    line-height:1.8;
+    overflow-x:hidden;
+}
 #hero{
     position:relative;
     overflow:hidden;
@@ -22,16 +29,12 @@ html{
             rgba(0,0,0,.55),
             rgba(0,0,0,.75)
         ),
-        url("../assets/backgrounds/liquid.jpg");
+        url("../assets/backgrounds/liquid.JPG");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
     animation:
         heroZoom 30s ease-in-out infinite alternate;
-    color:#ffffff;
-    font-family:"Inter",sans-serif;
-    line-height:1.8;
-    overflow-x:hidden;
 }
 img{
     display:block;
