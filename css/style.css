@@ -186,7 +186,7 @@ nav a.active{
         ),
         url("../assets/backgrounds/hero.jpg")
         center/cover no-repeat;
-   filter:contrast(1.1) brightness(.85);
+    filter:contrast(1.1) brightness(.85);
 }
 .hero-overlay{
     position:absolute;
@@ -203,6 +203,8 @@ nav a.active{
     position:relative;
     z-index:2;
     max-width:900px;
+    position:relative;
+    z-index:2;
 }
 .hero-label{
     display:inline-block;
