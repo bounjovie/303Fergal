@@ -187,7 +187,7 @@ nav a.active{
             rgba(0,0,0,.55),
             rgba(0,0,0,.70)
         ),
-        url("../assets/backgrounds/liquid.JPG")
+        url("../assets/background/liquid.JPG")
         center/cover no-repeat;
     filter:contrast(1.1) brightness(.85);
 }
