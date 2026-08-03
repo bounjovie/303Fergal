@@ -20,14 +20,10 @@ body{
     font-family:"Inter",sans-serif;
     line-height:1.8;
     overflow-x:hidden;
-}
-#hero{
-    position:relative;
-    overflow:hidden;
     background:
         linear-gradient(
-            rgba(0,0,0,.55),
-            rgba(0,0,0,.75)
+            rgba(0,0,0,.72),
+            rgba(0,0,0,.72)
         ),
         url("../assets/backgrounds/liquid.JPG");
     background-size:cover;
@@ -35,6 +31,10 @@ body{
     background-repeat:no-repeat;
     animation:
         heroZoom 30s ease-in-out infinite alternate;
+}
+#hero{
+    position:relative;
+    overflow:hidden;
 }
 img{
     display:block;
