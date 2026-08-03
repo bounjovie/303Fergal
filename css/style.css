@@ -150,6 +150,61 @@ p{
     border-bottom:1px solid rgba(255,255,255,.06);
     z-index:9000;
 }
+/* ================= HEADER ================= */
+
+#navigation{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    background:rgba(7,7,9,.82);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+/* first row */
+.nav-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 70px;
+}
+/* logo */
+.logo{
+    font-family:"Cormorant Garamond",serif;
+    font-size:40px;
+    letter-spacing:2px;
+}
+/* instagram */
+.instagram{
+    font-size:11px;
+    letter-spacing:4px;
+    opacity:.55;
+    transition:.35s;
+}
+.instagram:hover{
+    opacity:1;
+}
+/* second row */
+.nav-bottom{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    padding:14px 0;
+    border-top:1px solid rgba(255,255,255,.05);
+}
+/* navigation */
+.nav-bottom a{
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    opacity:.55;
+    transition:.35s;
+}
+.nav-bottom a:hover{
+    opacity:1;
+}
 .nav-container{
     height:76px;
     display:flex;
