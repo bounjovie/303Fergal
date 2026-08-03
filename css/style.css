@@ -195,12 +195,23 @@ p{
     border-top:1px solid rgba(255,255,255,.05);
 }
 /* navigation */
+.nav-bottom{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:38px;
+    padding:14px 24px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    white-space:nowrap;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+}
+.nav-bottom::-webkit-scrollbar{
+    display:none;
+}
 .nav-bottom a{
-    font-size:11px;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    opacity:.55;
-    transition:.35s;
+    flex:0 0 auto;
 }
 .nav-bottom a:hover{
     opacity:1;
@@ -596,51 +607,25 @@ button:focus-visible{
 }
 /* ========= RESPONSIVE ========= */
 @media (max-width:768px){
-    .nav-container{
-        flex-direction:column;
-        align-items:center;
-        gap:12px;
-        padding:18px 20px;
+    .nav-top{
+        padding:18px 22px;
     }
-    #menu-toggle{
+    .logo{
+        font-size:30px;
+    }
+    .instagram{
         display:none;
     }
-    nav{
-        display:flex !important;
-        position:static;
-        width:auto;
-        background:transparent;
-        border:none;
-    }
-    nav ul{
+    .nav-bottom{
         display:flex;
-        flex-wrap:wrap;
         justify-content:center;
-        gap:18px;
+        gap:16px;
+        flex-wrap:wrap;
+        padding:12px 14px;
     }
-    nav li{
-        margin:0;
-    }
-    nav a{
-        font-size:.75rem;
+    .nav-bottom a{
+        font-size:10px;
         letter-spacing:2px;
-        white-space:nowrap;
-    }
-    .timeline{
-        gap:28px;
-    }
-    .timeline::before{
-        display:none;
-    }
-    .timeline-item{
-        grid-template-columns:1fr;
-        gap:14px;
-    }
-    section{
-        padding:90px 0;
-    }
-    #hero h1{
-        letter-spacing:4px;
     }
 }
 @media (prefers-reduced-motion:reduce){
