@@ -586,17 +586,26 @@ button:focus-visible{
     .instagram{
         display:none;
     }
-    .nav-bottom{
-        display:flex;
-        justify-content:center;
-        gap:16px;
-        flex-wrap:wrap;
-        padding:12px 14px;
-    }
-    .nav-bottom a{
-        font-size:10px;
-        letter-spacing:2px;
-    }
+.nav-bottom{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:20px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    white-space:nowrap;
+    flex-wrap:nowrap;
+    padding:12px 18px;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+}
+.nav-bottom::-webkit-scrollbar{
+    display:none;
+}
+.nav-bottom a{
+    flex:0 0 auto;
+    font-size:10px;
+    letter-spacing:2px;
 }
 @media (prefers-reduced-motion:reduce){
     *{
